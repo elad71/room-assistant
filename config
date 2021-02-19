@@ -1,0 +1,25 @@
+global:
+  instanceName: 'Living Room'
+  integrations:
+    - homeAssistant
+    - bluetoothClassic
+homeAssistant:
+  mqttUrl: 'mqtt://192.168.2.x:1883'
+  mqttOptions:
+    username: xxx
+    password: xxx
+bluetoothClassic:
+  interval: 6
+  addresses:
+# Elad iPhone
+    - 'A0:FB:C5:xx:xx:xx'
+# Ashley iPhone
+    - 'A0:FB:C5:xx:xx:xx'
+# Elad Watch
+    - 'E8:81:52:xx:xx:xx'
+# Ashley watch
+    - '18:65:90:xx:xx:xx'
+  peerAddresses:
+    - 192.168.2.x:6425
+    - 192.168.2.x:6425
+    - 192.168.2.x:6425
